@@ -1,0 +1,27 @@
+body {
+    min-height: 100%;
+    padding-top: 70px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #055C75;
+}
+
+.navbar-header {
+    margin-right: 20px !important;
+}
+
+.navbar-default .navbar-nav > .active > a {
+
+}
+
+.navbar-brand {
+    overflow: hidden;
+    width: 110px;
+    margin-top: -4px !important;
+}
+
+.navbar-brand > img {
+    height: 110px;
+    left: -137px;
+    position: relative;
+}
