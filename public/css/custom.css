@@ -68,3 +68,58 @@ body {
 .category .row .col-xs-6:nth-of-type(even) {
     margin-left: -5px;
 }
+
+.promotion {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 200;
+}
+
+.promotion .content {
+    font-size: 16px;
+    margin: -15px 10px 10px 10px;
+    color: white;
+}
+
+.promotion .content a {
+    color: white;
+    text-decoration: none;
+}
+.promotion .content h3 {
+    color: lightgreen;
+    font-size: 18px;
+}
+.promotion button {
+    color: rgb(255, 0, 0);
+    position: relative;
+    right: 5px;
+    top: 0px;
+    font-size: xx-large;
+}
+.hidden {
+    opacity: 0;
+}
+
+@media(min-device-width: 1000px) {
+    /* Desktops */
+    .promotion {
+        top: 70px;
+        border-radius: 8px;
+        max-width: 200px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .promotion .content {
+        font-size: 12px;
+    }
+
+    .promotion button {
+        color: darkred;
+    }
+}
