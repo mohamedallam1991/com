@@ -84,7 +84,7 @@
 
 </div> <!-- /container -->
 
-<footer class="footer navbar-fixed-bottom">
+<footer class="footer">
     <div class="container-fluid">
         &copy;2017 Revolution Machinery.  All rights reserved.
     </div>

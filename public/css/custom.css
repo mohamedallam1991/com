@@ -25,3 +25,46 @@ body {
     left: -137px;
     position: relative;
 }
+
+.category {
+    min-height: 700px;
+    max-height: 700px;
+    background-attachment: fixed;
+    background-position: left center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.category h1 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.product-card {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 150px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 8px;
+    color: black;
+}
+
+.product-card img {
+    width: 90px;
+    margin: 0 0 15px 10px;
+}
+
+.product-card p {
+    margin: 0 10px;
+}
+
+.category .row .col-xs-6 {
+    margin: 0;
+    padding: 0;
+}
+
+.category .row .col-xs-6:nth-of-type(even) {
+    margin-left: -5px;
+}
