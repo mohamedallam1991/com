@@ -123,3 +123,33 @@ body {
         color: darkred;
     }
 }
+
+/* About Styles */
+body {
+    background-color: white;
+}
+.about {
+    background: transparent;
+}
+.about img {
+    width: 2500px;
+    position: relative;
+    left: -925px;
+}
+
+.about .img-holder {
+    position: fixed;
+    z-index: -1;
+    min-width: 290px;
+    max-width: 290px;
+    max-height: 290px;
+    min-height: 290px;
+    overflow: hidden;
+    top: 200px;
+    opacity: 0.1;
+}
+
+.about h1 {
+    border-bottom: 1px solid black;
+    box-shadow: 0 0px 1px -1px #de1dde;
+}
