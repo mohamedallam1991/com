@@ -1,0 +1,3 @@
+$(function () {
+    $('.unconstrained').addClass('constrain');
+});

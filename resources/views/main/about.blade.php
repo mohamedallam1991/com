@@ -15,3 +15,8 @@
     </div>
 
 @endsection
+
+@section('script.js')
+    @parent
+    <script src="{{ asset('js/constrain.js') }}"></script>
+@endsection

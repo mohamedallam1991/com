@@ -78,7 +78,7 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid unconstrained">
 
     @yield('content')
 
@@ -86,7 +86,47 @@
 
 <footer class="footer">
     <div class="container-fluid">
-        &copy;2017 Revolution Machinery.  All rights reserved.
+        <div class="col-xs-6 col-xs-offset-6 mobile pull-right">
+            <a link="/inquiry">Dealer Application</a>
+        </div>
+        <div class="col-md-3 desktop">
+            <h4><span>Main</span></h4>
+            <ul class="links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/product">Products</a></li>
+                <li><a href="/locator">Dealer Locator</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 desktop">
+            <h4><span>Dealer</span></h4>
+            <ul class="links">
+                <li><a href="/login">Dealer Login</a></li>
+                <li><a href="/dealer/landing">Dealer Portal</a></li>
+                <li><a href="/dealer/account">My Account</a></li>
+                <li><a href="/dealer/orders">Order History</a></li>
+                <li><a href="/dealer/tracking">Order Tracking</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 desktop">
+            <h4><span>Admin</span></h4>
+            <ul class="links">
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/dsadmin/applications">Applications</a></li>
+                <li><a href="/dsadmin/contacts">Contact Requests</a></li>
+                <li><a href="/dsadmin/dealers">Dealers</a></li>
+                <li><a href="/dsadmin/orders">Orders</a></li>
+                <li><a href="/dsadmin/pricing">Pricings</a> </li>
+                <li><a href="/dsadmin/products">Products</a> </li>
+                <li><a href="/dsadmin/promotions">Promotions</a></li>
+                <li><a href="/dsadmin/tracking">Tracking</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-12">
+            &copy;2017 Revolution Machinery.  All rights reserved.
+        </div>
+
     </div>
 </footer>
 
@@ -94,7 +134,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
-<script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 @section('script.js')
 @show
 </body>
