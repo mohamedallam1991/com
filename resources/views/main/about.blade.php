@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <div class="about">
+    <div class="common">
         <div class="img-holder">
             <img src="{{url('/images/RevolutionLogos.svg')}}" alt="Revolution Logo">
         </div>

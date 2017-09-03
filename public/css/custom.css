@@ -133,16 +133,16 @@ body {
 body {
     background-color: white;
 }
-.about {
+.common {
     background: transparent;
 }
-.about img {
+.common img {
     width: 2500px;
     position: relative;
     left: -925px;
 }
 
-.about .img-holder {
+.common .img-holder {
     position: fixed;
     z-index: -5;
     min-width: 290px;
@@ -154,7 +154,7 @@ body {
     opacity: 0.1;
 }
 
-.about h1 {
+.common h1 {
     border-bottom: 1px solid black;
     box-shadow: 0 7px 7px -7px #de1dde;
 }
@@ -172,7 +172,7 @@ body {
     top: 34px !important;
 }
 
-.about form .form-control {
+.common form .form-control {
     border: none;
     border-bottom: 1px solid black;
     border-radius: 0;
@@ -181,14 +181,14 @@ body {
     background: transparent;
 }
 
-.about form label {
+.common form label {
     left: 13px;
 }
-.about form textarea {
+.common form textarea {
     height: 200px;
 }
 
-.about form {
+.common form {
     margin-bottom: 15px;
 }
 

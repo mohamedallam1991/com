@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <div class="about">
+    <div class="common">
         <h1>Dealer Inquiry</h1>
 
         Form goes here....
