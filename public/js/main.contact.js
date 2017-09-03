@@ -1,5 +1,6 @@
 $(function () {
    $('.form-control').keyup(function(e) {
+       console.log('Here');
        input = e.target;
        label = $('#' + input.parentNode.children[0].id);
        var text = input.value;
