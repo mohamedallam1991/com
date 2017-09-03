@@ -1,0 +1,53 @@
+#loader {
+    width: 600px;
+    height: 480px;
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+#loader img {
+    width: 50px;
+    height: 50px;
+    left: 275px;
+    top: 215px;
+}
+
+#loader p {
+    margin: 215px auto;
+    width: 100px;
+}
+
+#networkDown {
+    opacity: 1;
+    width: 600px;
+    height: 480px;
+    transition: opacity 0.5s;
+ }
+
+#networkDown h5 {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+#embedMap {
+}
+
+.about {
+    min-height: 500px;
+}
+
+.hidden {
+}
+
+@media(min-device-width: 1000px) {
+    #locateContent {
+        float: left;
+        min-width: 390px;
+        max-width: 390px;
+    }
+
+    #locateContent .form-inline .form-control {
+        width: 300px;
+    }
+}
