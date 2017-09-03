@@ -24,9 +24,9 @@
             @endforeach
         </div>
 
-        Add Filters by Category
-        Search is implemented in the navbar
-        show product cards
+        <div class="products">
+            @include('products.stubs.product')
+        </div>
     </div>
 @endsection
 
