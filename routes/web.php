@@ -35,6 +35,10 @@ Route::get('/products', function() {
     return view('products.landing');
 });
 
+Route::get('/products/cat/{id}', function() {
+    return view('products.landing');
+});
+
 Route::get('/products/product/{id}', function() {
     return view('products.product');
 });

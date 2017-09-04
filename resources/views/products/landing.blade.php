@@ -18,9 +18,9 @@
         @endphp
         <h1>Products</h1>
         <div class="tab-center list-group list-inline">
-            <a href="/products" class="list-group-item {{ $active }}">All Products</a>
+            <a href="/products" class="list-group-item">All Products</a>
             @foreach($categories as $cat)
-                <a href="/products?cat={{ $cat['title'] }}" class="list-group-item {{ $cat['active'] }}">{{ $cat['title']}}</a>
+                <a href="/products/cat/{{ $cat['title'] }}" class="list-group-item">{{ $cat['title']}}</a>
             @endforeach
         </div>
 
@@ -33,4 +33,5 @@
 @section('script.js')
     @parent
     <script src="{{ url('js/constrain.js') }}"></script>
+    <script src="{{ url('js/main.products.js') }}"></script>
 @endsection
