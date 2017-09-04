@@ -41,7 +41,7 @@
         </table>
     </div>
 
-
+    <strong>TODO: Implement checkout workflow</strong>
 @endsection
 
 @section('script.js')

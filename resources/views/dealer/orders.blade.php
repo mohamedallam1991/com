@@ -1,5 +1,54 @@
+@php
+    $orders = array(
+        array('id' => '12345', 'placed' => '6/19/2017', 'status' => 'pending', 'total' => '$1239.56'),
+        array('id' => '12313', 'placed' => '5/01/2017', 'status' => 'shipped', 'total' => '$1239.56'),
+        array('id' => '11543', 'placed' => '3/18/2017', 'status' => 'shipped', 'total' => '$1239.56'),
+        array('id' => '11412', 'placed' => '1/24/2017', 'status' => 'shipped', 'total' => '$1239.56'),
+        array('id' => '11011', 'placed' => '12/18/2016', 'status' => 'shipped', 'total' => '$1239.56'),
+   );
+@endphp
+
 @extends('layout.layout')
 
+@section('styles')
+    <link href="{{ url('css/dealer.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
-    <h1>Order History lives here...</h1>
+    @include('dealer.stubs.navigation')
+    <div class="col-xs-12 col-md-10 common">
+        <h1>Order History</h1>
+        <table class="table order-table">
+            <thead>
+            <th>Date</th>
+            <th>Order Id</th>
+            <th>Status</th>
+            <th>Total</th>
+            </thead>
+            <tbody>
+            @foreach($orders as $order)
+                <a href="/dealer/order/{{ $order['id'] }}">
+                    <tr id="{{ $order['id'] }}">
+                        <td>{{ $order['placed'] }}</td>
+                        <td>{{ $order['id'] }}</td>
+                        <td>{{ $order['status'] }}
+                            @if($order['status'] === 'shipped')
+                                <a href="/dealer/tracking?id={{ $order['id'] }}" class="btn btn-default shipping-link"><img class="shipping-img" src="{{ url('images/shipping.png') }}"/></a>
+                            @endif
+                        </td>
+                        <td>{{ $order['total'] }}</td>
+                    </tr>
+                </a>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
+
+@endsection
+
+@section('script.js')
+    @parent
+    <script src="{{ url('js/constrain.js') }}"></script>
+    <script src="{{ url('js/dealer.navigation.js') }}"></script>
+    <script src="{{ url('js/dealer.orders.js') }}"></script>
 @endsection
