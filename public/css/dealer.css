@@ -104,6 +104,25 @@
 .desktop-only {
     display: none;
 }
+
+/* Account stuff */
+.common h2 {
+    /* Subheading */
+    border-bottom: 1px solid black;
+    box-shadow: 0 7px 7px -7px #de1dde;
+    width: 50%;
+}
+
+.account-edit {
+    top: -15px;
+    color: rgb(5, 92, 117);
+    cursor: pointer;
+}
+.common a,
+.common a:hover,
+.common a:visited {
+    text-decoration: none;
+}
 @media(min-device-width: 1000px) {
     .mobile-only {
         display: none;
