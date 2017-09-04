@@ -103,8 +103,8 @@
         <div class="col-md-3 desktop">
             <h4><span>Dealer</span></h4>
             <ul class="links">
-                <li><a href="/login">Dealer Login</a></li>
-                <li><a href="/dealer/landing">Dealer Portal</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/dealer/">Dealer Portal</a></li>
                 <li><a href="/dealer/account">My Account</a></li>
                 <li><a href="/dealer/orders">Order History</a></li>
                 <li><a href="/dealer/tracking">Order Tracking</a></li>
@@ -114,6 +114,7 @@
             <h4><span>Admin</span></h4>
             <ul class="links">
                 <li><a href="/logout">Logout</a></li>
+                <li><a href="/dsadmin">Admin Portal</a></li>
                 <li><a href="/dsadmin/applications">Applications</a></li>
                 <li><a href="/dsadmin/contacts">Contact Requests</a></li>
                 <li><a href="/dsadmin/dealers">Dealers</a></li>
