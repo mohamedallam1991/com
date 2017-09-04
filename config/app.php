@@ -2,9 +2,6 @@
 
 
 return [
-    if(App::environment('production')) {
-        URL::forceScheme('https');
-    }
     /*
     |--------------------------------------------------------------------------
     | Application Name
