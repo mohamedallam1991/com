@@ -1,10 +1,10 @@
 <?php
 
-if(App::environment('production')) {
-    URL::forceScheme('https');
-}
-return [
 
+return [
+    if(App::environment('production')) {
+        URL::forceScheme('https');
+    }
     /*
     |--------------------------------------------------------------------------
     | Application Name
