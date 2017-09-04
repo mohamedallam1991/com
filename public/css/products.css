@@ -22,6 +22,7 @@
 .product-card {
     border: 1px solid #eee;
     box-shadow: 0 1px 6px -3px #de1dde;
+    cursor: pointer;
 }
 
 .product-card h4 {

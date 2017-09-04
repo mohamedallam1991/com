@@ -4,7 +4,6 @@ $(function() {
    // we might already have the user's location and
    // can provide a good map right out of the gate...
    if(navigator.geolocation) {
-       console.log("hi again");
        navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
    }
 
