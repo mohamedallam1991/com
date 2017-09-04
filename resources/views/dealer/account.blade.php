@@ -100,4 +100,5 @@
 @section('script.js')
     @parent
     <script src="{{ url('js/constrain.js') }}"></script>
+    <script src="{{ url('js/dealer.navigation.js') }}"></script>
 @endsection

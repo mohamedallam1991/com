@@ -137,6 +137,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ url('js/main.navigation.js') }}"></script>
 @section('script.js')
     <script src="{{ url('js/geolocation.js') }}"></script>
 @show
