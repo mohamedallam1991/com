@@ -1,0 +1,10 @@
+.applicant-table tbody > tr,
+.table-tracking {
+    cursor: pointer;
+}
+
+.applicant-table tbody > tr:hover,
+.table-tracking tbody > tr:hover {
+    background-color: rgba(5, 92, 117, 0.5);
+    color: white;
+}
