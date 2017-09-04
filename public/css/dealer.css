@@ -38,7 +38,8 @@
     width: 200px;
     border-bottom-left-radius: 10px;
     z-index: 50;
-    background-color: rgba(5, 92, 117, 0.5);
+    color: white;
+    background-color: rgba(5, 92, 117, 0.8);
 }
 
 .cartview.cart-closed {
@@ -50,7 +51,7 @@
     height: 50px;
     position: relative;
     right: 80px;
-    background-color: rgba(5, 92, 117, 0.5);
+    background-color: rgba(5, 92, 117, 0.8);
     border-bottom-left-radius: 10px;
     width: 80px;
     top: 0px;
@@ -76,6 +77,24 @@
     display: block;
 }
 
+.btn.shipping-link {
+    padding: 0 2px;
+    margin-left: 5px;
+}
+
+.order-table tbody > tr {
+    cursor: pointer;
+}
+
+.order-table tbody > tr:hover {
+    background-color: rgba(5, 92, 117, 0.5);
+    color: white;
+}
+.shipping-img {
+    width: 15px !important;
+    height: 15px;
+    left: 0 !important;
+}
 .mobile-only {
     display: block;
 }

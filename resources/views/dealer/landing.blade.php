@@ -23,4 +23,5 @@
     @parent
     <script src="{{ url('js/constrain.js') }}"></script>
     <script src="{{ url('js/dealer.cart.js') }}"></script>
+    <script src="{{ url('js/dealer.orders.js') }}"></script>
 @endsection

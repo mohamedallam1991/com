@@ -1,4 +1,4 @@
-<div class="col-md-2 sidebar">
+<div class="col-xs-12 col-md-2 sidebar">
     <ul class="nav nav-pills nav-stacked">
         <li role="presentation" class="active"><a href="/dealer">Portal Home</a> </li>
         <li role="presentation" class=""><a href="/dealer/account">My Account</a> </li>
