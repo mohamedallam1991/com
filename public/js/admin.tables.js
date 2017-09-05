@@ -18,4 +18,12 @@ $(function() {
         a.click();
         a.remove();
     });
+
+    $('.dealer-table tr').click(function(e) {
+        e.preventDefault();
+        var a = document.createElement('a');
+        a.setAttribute('href', '/dsadmin/dealer/' + e.target.parentNode.id);
+        a.click();
+        a.remove();
+    });
 });

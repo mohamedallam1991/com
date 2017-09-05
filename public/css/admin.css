@@ -1,9 +1,11 @@
 .applicant-table tbody > tr,
-.contact-table tbody > tr {
+.contact-table tbody > tr,
+.dealer-table tbody > tr {
     cursor: pointer;
 }
 
 .applicant-table tbody > tr:hover,
+.dealer-table tbody > tr:hover,
 .contact-table tbody > tr:hover {
     background-color: rgba(5, 92, 117, 0.5);
     color: white;

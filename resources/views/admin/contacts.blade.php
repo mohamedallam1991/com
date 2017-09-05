@@ -17,7 +17,7 @@
 @section('content')
     @include('admin.stubs.navigation')
     <div class="col-xs-12 col-md-10 common">
-        <h1>Contact Requests lives here...</h1>
+        <h1>Contact Requests</h1>
         <table class="table contact-table">
             <thead>
             <th>Name</th>
