@@ -26,4 +26,12 @@ $(function() {
         a.click();
         a.remove();
     });
+
+    $('.order-table tr').click(function(e) {
+        e.preventDefault();
+        var a = document.createElement('a');
+        a.setAttribute('href', '/dsadmin/order/' + e.target.parentNode.id);
+        a.click();
+        a.remove();
+    });
 });
