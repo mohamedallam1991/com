@@ -97,6 +97,10 @@ Route::get('/dsadmin/contacts', function() {
     return view('admin.contacts');
 });
 
+Route::get('/dsadmin/contact/{id}', function() {
+    return view('admin.contact');
+});
+
 Route::get('/dsadmin/dealers', function() {
     return view('admin.dealers');
 });

@@ -1,10 +1,14 @@
 .applicant-table tbody > tr,
-.table-tracking {
+.contact-table tbody > tr {
     cursor: pointer;
 }
 
 .applicant-table tbody > tr:hover,
-.table-tracking tbody > tr:hover {
+.contact-table tbody > tr:hover {
     background-color: rgba(5, 92, 117, 0.5);
     color: white;
+}
+
+a.form-control {
+    background-color: #eee;
 }
