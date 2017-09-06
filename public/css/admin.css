@@ -77,3 +77,8 @@ a.form-control {
 #product-image {
     left: 0;
 }
+
+i {
+    margin-top: -15px;
+    color: green;
+}
