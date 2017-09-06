@@ -68,7 +68,7 @@
 @endsection
 
 @section('content')
-    @include('dealer.stubs.navigation')
+    @include('admin.stubs.navigation')
     <div class="col-xs-12 col-md-10 common">
         <h1>Dealer Pricing</h1>
         <form id="dealer-picker" class="form-inline pull-right">
@@ -87,7 +87,7 @@
             </div>
         </form>
         <form id="product-list" class="form" method="post">
-            <table class="table product-table">
+            <table class="table item-table">
                 <thead>
                 <th>Product</th>
                 <th>Cost</th>
@@ -253,7 +253,7 @@
                 $('tr#' + key + ' .discount-type').val(value['type']);
                 var discount = calculateDiscount(value['type'], value['discount'], retail);
                 $('tr#' + key + ' .discount-amount').val(value['discount']);
-                $('tr#' + key + ' .sale-price').val(retail - discount);
+                $('tr#' + key + ' .sale-price').val((retail - discount).toFixed(2));
                 calculateMargins();
             });
         }
@@ -280,6 +280,13 @@
                 updateRow(e.target.parentNode.parentNode.id);
             });
 
+            $('.discount-amount').keyup(function(e) {
+                updateRow(e.target.parentNode.parentNode.id);
+            });
+
+            $('.discount-amount').change(function(e) {
+                updateRow(e.target.parentNode.parentNode.id);
+            });
             calculateMargins();
         });
     </script>

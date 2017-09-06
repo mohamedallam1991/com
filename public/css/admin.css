@@ -1,14 +1,16 @@
 .applicant-table tbody > tr,
 .contact-table tbody > tr,
 .order-table tbody > tr,
-.dealer-table tbody > tr {
+.dealer-table tbody > tr,
+.product-table tbody > tr {
     cursor: pointer;
 }
 
 .applicant-table tbody > tr:hover,
 .dealer-table tbody > tr:hover,
 .order-table tbody > tr:hover,
-.contact-table tbody > tr:hover {
+.contact-table tbody > tr:hover,
+.product-table tbody > tr:hover {
     background-color: rgba(5, 92, 117, 0.5);
     color: white;
 }
@@ -21,7 +23,8 @@ a.form-control {
     margin-right: 15px;
 }
 
-#product-list img {
+#product-list img,
+.product-table img {
     width: 25px !important;
     height: 25px;
     left: 0 !important;
@@ -48,4 +51,29 @@ a.form-control {
 #product-list td:last-of-type {
     width: 15%;
     max-width: 120px;
+}
+
+/* Product management */
+.tab-center {
+    text-align: center;
+}
+
+.tab-center .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+
+.tab-center .list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+}
+
+.tab-center a.list-group-item {
+    display: inline-block;
+    width: 135px;
+    margin-right: -5px;
+}
+
+#product-image {
+    left: 0;
 }

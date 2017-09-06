@@ -34,4 +34,11 @@ $(function() {
         a.click();
         a.remove();
     });
+    $('.product-table tr').click(function(e) {
+        e.preventDefault();
+        var a = document.createElement('a');
+        a.setAttribute('href', '/dsadmin/product/' + e.target.parentNode.id);
+        a.click();
+        a.remove();
+    });
 });
