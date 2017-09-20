@@ -72,7 +72,11 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/login">Dealer Login</a>
+                    @if(!Auth::guest())
+                        <a href="/logout">Logout</a>
+                    @else
+                        <a href="/login">Dealer Login</a>
+                    @endif
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -88,7 +92,7 @@
 <footer class="footer">
     <div class="container-fluid">
         <div class="col-xs-6 col-xs-offset-6 mobile pull-right">
-            <a link="/inquiry">Dealer Application</a>
+            <a link="/register">Dealer Application</a>
         </div>
         <div class="col-md-3 desktop">
             <h4><span>Main</span></h4>
@@ -98,32 +102,37 @@
                 <li><a href="/locator">Dealer Locator</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/register">Dealer Application</a> </li>
             </ul>
         </div>
         <div class="col-md-3 desktop">
-            <h4><span>Dealer</span></h4>
-            <ul class="links">
-                <li><a href="/logout">Logout</a></li>
-                <li><a href="/dealer/">Dealer Portal</a></li>
-                <li><a href="/dealer/account">My Account</a></li>
-                <li><a href="/dealer/orders">Order History</a></li>
-                <li><a href="/dealer/tracking">Order Tracking</a></li>
-            </ul>
+            @if(!Auth::guest())
+                <h4><span>Dealer</span></h4>
+                <ul class="links">
+                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/dealer/">Dealer Portal</a></li>
+                    <li><a href="/dealer/account">My Account</a></li>
+                    <li><a href="/dealer/orders">Order History</a></li>
+                    <li><a href="/dealer/tracking">Order Tracking</a></li>
+                </ul>
+            @endif
         </div>
         <div class="col-md-3 desktop">
-            <h4><span>Admin</span></h4>
-            <ul class="links">
-                <li><a href="/logout">Logout</a></li>
-                <li><a href="/dsadmin">Admin Portal</a></li>
-                <li><a href="/dsadmin/applications">Applications</a></li>
-                <li><a href="/dsadmin/contacts">Contact Requests</a></li>
-                <li><a href="/dsadmin/dealers">Dealers</a></li>
-                <li><a href="/dsadmin/orders">Orders</a></li>
-                <li><a href="/dsadmin/pricing">Pricings</a> </li>
-                <li><a href="/dsadmin/products">Products</a> </li>
-                <li><a href="/dsadmin/promotions">Promotions</a></li>
-                <li><a href="/dsadmin/tracking">Tracking</a></li>
-            </ul>
+            @if(!Auth::guest() && Auth::user()->hasRole('admin'))
+                <h4><span>Admin</span></h4>
+                <ul class="links">
+                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/dsadmin">Admin Portal</a></li>
+                    <li><a href="/dsadmin/applications">Applications</a></li>
+                    <li><a href="/dsadmin/contacts">Contact Requests</a></li>
+                    <li><a href="/dsadmin/dealers">Dealers</a></li>
+                    <li><a href="/dsadmin/orders">Orders</a></li>
+                    <li><a href="/dsadmin/pricing">Pricings</a> </li>
+                    <li><a href="/dsadmin/products">Products</a> </li>
+                    <li><a href="/dsadmin/promotions">Promotions</a></li>
+                    <li><a href="/dsadmin/tracking">Tracking</a></li>
+                </ul>
+            @endif
         </div>
         <div class="col-xs-12 col-md-12">
             &copy;2017 Revolution Machinery.  All rights reserved.
