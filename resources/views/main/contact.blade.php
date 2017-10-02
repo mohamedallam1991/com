@@ -28,6 +28,6 @@
 
 @section('script.js')
     @parent
-    <script src="{{ asset('js/main.contact.js') }}"></script>
+
     <script src="{{ asset('js/constrain.js') }}"></script>
 @endsection

@@ -47,10 +47,8 @@
                     <a href="/products">Products</a>
                 </li>
                 <li>
-                    <a href="/locator">Dealer Locator</a>
+                    <a href="/manuals">Manuals</a>
                 </li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
                 {{--<li class="dropdown">--}}
                     {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>--}}
                     {{--<ul class="dropdown-menu">--}}
@@ -66,7 +64,7 @@
             </ul>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search Products" aria-label="Search">
+                    <input id="searchText" class="form-control" type="text" placeholder="Search Products" aria-label="Search">
                 </div>
                 <button class="btn btn-default" type="submit">Search</button>
             </form>
@@ -83,7 +81,7 @@
     </div>
 </nav>
 
-<div class="container-fluid unconstrained">
+<div class="container-fluid unconstrained container">
 
     @yield('content')
 

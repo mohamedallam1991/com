@@ -1,6 +1,5 @@
 body {
     min-height: 100%;
-    padding-top: 70px;
 }
 
 .container-fluid {
@@ -19,18 +18,35 @@ body {
 
 }
 
+nav {
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-left: 120px;
+    height: 80px;
+}
 .navbar-brand {
     overflow: hidden;
-    width: 110px;
+    width: 100px;
     margin-top: -4px !important;
+    border: 2px solid #D3E0E9;
+    border-radius: 50%;
+    height: 100px;
+    position: fixed;
+    top: 10px;
 }
 
 .navbar-brand > img {
-    height: 110px;
-    left: -137px;
+    height: 245px;
+    left: -302px;
+    top: -4px;
     position: relative;
 }
 
+#searchText {
+    width: 300px;
+}
 .category {
     min-height: 700px;
     max-height: 700px;
@@ -118,6 +134,7 @@ body {
         border-radius: 8px;
         max-width: 200px;
         background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5300;
     }
 
     .promotion .content {
@@ -219,19 +236,57 @@ ul.links > li {
 .footer h4 span {
     border-bottom: 1px solid;
 }
+
+@media (min-width: 768px) {
+
+    .navbar-nav > li,
+    .navbar-left {
+        height: 80px;
+        margin-top: 30px;
+    }
+}
+
 @media(min-device-width: 1000px) {
+    .navbar .container-fluid {
+        max-width: 1000px;
+    }
     .constrain {
         max-width: 1000px;
+    }
+
+    .unconstrained {
+        max-width: 100%;
+        width: 100%;
     }
     .mobile {
         display: none;
     }
     .footer {
         height: auto;
-        margin-top: 83px;
+        margin-top: 0px;
     }
 
     .desktop {
         display: block;
     }
+}
+
+.about {
+    background-image: url(/images/rev5-14000.jpg);
+}
+
+.contact {
+    background-image: url(/images/rev6-14000.jpg);
+}
+
+.sweet {
+    background-attachment: fixed;
+    background-position: 250px center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    max-height: 700px;
+    min-height: 700px;
+    overflow: hidden;
+    padding: 80px 30px 0 0;
+    vertical-align: top;
 }
