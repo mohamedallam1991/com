@@ -27,10 +27,7 @@ nav {
     height: 80px;
 }
 .navbar-brand {
-    overflow: hidden;
     width: 100px;
-    margin-top: -4px !important;
-    border: 2px solid #D3E0E9;
     border-radius: 50%;
     height: 100px;
     position: fixed;
@@ -38,9 +35,8 @@ nav {
 }
 
 .navbar-brand > img {
-    height: 245px;
-    left: -302px;
-    top: -4px;
+    width: 150px;
+    left: -40px;
     position: relative;
 }
 

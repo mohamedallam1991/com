@@ -50,7 +50,7 @@
     <div class="about sweet">
         <div class="common col-xs-6 col-xs-offset-4">
             <div class="img-holder">
-                <img src="{{url('/images/RevolutionLogos.svg')}}" alt="Revolution Logo">
+                <img src="{{url('/images/rev-title-logo.svg')}}" alt="Revolution Logo">
             </div>
 
             <h1>About Us</h1>
@@ -65,7 +65,7 @@
     <div class="contact sweet">
         <div class="common col-xs-6 col-xs-offset-4">
             <div class="img-holder">
-                <img src="{{url('/images/RevolutionLogos.svg')}}" alt="Revolution Logo">
+                <img src="{{url('/images/rev-title-logo.svg')}}" alt="Revolution Logo">
             </div>
             <h1>Contact Us</h1>
 
